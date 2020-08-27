@@ -71,6 +71,13 @@ public class UserController {
 	@Autowired
     ReportDataService reportService ; 
 	
+	
+	@GetMapping("/user/all")
+	@PreAuthorize("hasRole('ADMIN')")
+	public List<User> getAllUsers() {
+		 return userService.getAllUsers();
+	}
+	
 	@GetMapping("/user/reporttoday/{id}")
 	@PreAuthorize("hasRole('USER') or hasRole('ADMIN')")
 	public List<ReportData> getReportDataForCurrentUSer(@PathVariable("id") Long id) {

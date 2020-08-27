@@ -19,6 +19,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
 	
 	//@Query( value ="SELECT * from users as u join fitness as f on f.user_id = u.id WHERE f.id = :id" , nativeQuery = true)
 	User findByFitnessId( Long id);
+	
+	
 
 
 }

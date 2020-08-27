@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.calories</groupId>
-	<artifactId>calories-service</artifactId>
+	<artifactId>calories-service-revert</artifactId>
 	<version>0.0.1</version>
-	<name>calories-service-v0</name>
+	<name>calories-service-revert</name>
 	<description>okito backend Spring Boot</description>
 
 	<properties>
